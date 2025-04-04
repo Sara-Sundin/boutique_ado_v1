@@ -103,6 +103,8 @@ def checkout(request):
 
         order_form = OrderForm()
 
+        # in the video, the below code is not indented properly
+        # this is the correct indentation
         if not stripe_public_key:
             messages.warning(request, 'Stripe public key is missing. \
                 Did you forget to set it in your environment?')
